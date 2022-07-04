@@ -23,7 +23,7 @@ const MovieDetail = () => {
     } else {
       setMovieDetail(location.state);
     }
-  }, []);
+  }, [location.pathname, location.state]);
 
   useEffect(() => {
     const getMovieVideos = () => {
