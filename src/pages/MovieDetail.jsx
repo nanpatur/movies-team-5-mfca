@@ -32,7 +32,7 @@ const MovieDetail = () => {
         key: "AIzaSyBZXio7Nb5pIOBp2-O-JdCdk_8H0oW_T4E",
       };
 
-      search(movieDetail.title, opts, function (err, results) {
+      search(movieDetail.title + ' trailer', opts, function (err, results) {
         if (err) return console.log(err);
 
         setVideoId(results[0].id);
