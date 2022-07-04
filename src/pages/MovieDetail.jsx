@@ -5,7 +5,7 @@ var search = require("youtube-search");
 const MovieDetail = () => {
   const [movieDetail, setMovieDetail] = useState();
   const [videoId, setVideoId] = useState();
-  const { location, push } = useHistory();
+  const { location } = useHistory();
 
   useEffect(() => {
     const movieId = location.pathname.split("/")[1];
